@@ -1,0 +1,32 @@
+{
+    "name" 			: "capwebsolutions/spokenroyalty",
+    "description" 	: "Spoken Royalty Website",
+    "type"          : "project",
+    "keywords" 		: ["wordpress", "wp", "theme", "genesis"],
+    "homepage" 		: "http://capwebsolutiosn.com",
+    "license" 		: "GPL-2.0+",
+    "authors": [
+        {
+            "name" 	: "capwebsolutions",
+            "email" : "matt@capwebsolutions.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0",
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "require-dev": {},
+    "autoload" : {
+        "classmap": [],
+        "files": []
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "vendor-dir": "assets/vendor"
+    },
+    "minimum-stability": "dev"
+}
