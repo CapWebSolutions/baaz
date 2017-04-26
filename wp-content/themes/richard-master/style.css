@@ -987,6 +987,52 @@ img.alignright,
 	display: none;
 }
 
+/* 
+Dashicons
+--------------------------------------------- */
+
+.dashicons.custom-dashicon {
+    font-size: 50px;
+}
+
+/* 
+FAQs
+--------------------------------------------- */
+a.faq-tease:link {
+	font-weight: 600;
+	font-size: 20px;
+	font-size: 2.0rem;
+	color: #000 !important;
+}
+a.faq-tease:hover {
+	color: #8ECA05;
+}
+/* 
+Footer Call Now Box
+--------------------------------------------- */
+
+.footer-call-now {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	color: #8ECA05;
+	font-size: 36px;
+	font-weight: 700;
+	padding: 20% 0;
+}
+.right-footer .material-icons {
+	font-size: 75px;
+}
+.right-footer {
+	width: 50vw;
+	color: #8ECA05;
+	border: 5px #8ECA05 solid;
+	box-sizing: border-box;
+	height: 100%;
+}
 /*
 Social Icons
 --------------------------------------------- */
@@ -1228,9 +1274,9 @@ Social Icons
 .home .content .cta-wrap .cta-title {
 	color: #005060;
 	display: block;
-	font-size: 18px;
-	font-size: 1.8rem;
-	font-weight: 300;
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: 600;
 }
 
 .home .content .cta-wrap .cta-title {
@@ -2557,8 +2603,8 @@ div.jw-display-icon-container .jw-icon-display {
 --------------------------------------------- */
 
 .nav-primary .genesis-nav-menu > .menu-item {
-	font-size: 17px;
-	font-size: 1.7rem;
+	font-size: 20px;
+	font-size: 2.0rem;
 	font-weight: 400;
 }
 
@@ -3806,7 +3852,7 @@ ul li.comment {
 
 .footer-widgets-2 .widget {
 	float: left;
-	padding: 50px 0;
+	/*padding: 50px 0;*/
 }
 
 .footer-widgets-1 .widget-wrap {
@@ -5186,7 +5232,7 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 		margin-left: 0;
 	}
 
-	.footer-widgets-2 .widget,
+	/*.footer-widgets-2 .widget,*/
 	.footer-widgets-1 .widget {
 		padding: 50px 30px;
 		width: 100%;
