@@ -6,40 +6,73 @@
  *
  * @package      Core_Functionality
  * @since        1.0.0
- * @link         https://github.com/billerickson/Core-Functionality
- * @author       Bill Erickson <bill@billerickson.net>
- * @copyright    Copyright (c) 2011, Bill Erickson
+ * @link         https://github.com/capwebsolutions/Core-Functionality
+ * @author       Cap Web Solutions <matt@capwebsolutions.com>
+ * @copyright    Copyright (c) 2017, Matt Ryan
  * @license      http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
+
 add_action( 'init', 'cptui_register_my_cpts' );
 function cptui_register_my_cpts() {
+
+	/**
+	 * Post Type: Testimonials.
+	 */
+
 	$labels = array(
-		'name' => __( 'Poet', '' ),
-		'singular_name' => __( 'Poet', '' ),
-		);
+		"name" => __( 'Testimonials', 'baaz-testimonials' ),
+		"singular_name" => __( 'Testimonial', 'baaz-testimonials' ),
+		'add_new' => __( 'Add New Testimonial', 'baaz-testimonials' ),
+		'add_new_item' => __( 'Add New Testimonial', 'baaz-testimonials' ),
+		'edit_item' => __( 'Edit Testimonial', 'baaz-testimonials' ),
+		'new_item' => __( 'New Testimonial', 'baaz-testimonials' ),
+		'view_item' => __( 'View Testimonial', 'baaz-testimonials' ),
+		'search_items' => __( 'Search Testimonials', 'baaz-testimonials' ),
+		'not_found' =>  __( 'No Testimonials found', 'baaz-testimonials' ),
+		'not_found_in_trash' => __( 'No Testimonials found in trash', 'baaz-testimonials' ),
+		'parent_item_colon' => '',
+		'menu_name' => __( 'Testimonials', 'baaz-testimonials' ),
+	);
 
 	$args = array(
-		'label' => __( 'Poet', '' ),
-		'labels' => $labels,
-		'description' => '',
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'show_in_rest' => false,
-		'rest_base' => '',
-		'has_archive' => false,
-		'show_in_menu' => true,
-				'exclude_from_search' => false,
-		'capability_type' => 'post',
-		'map_meta_cap' => true,
-		'hierarchical' => false,
-		'rewrite' => array( 'slug' => 'poets', 'with_front' => false ),
-		'query_var' => true,
-		'menu_icon' => 'dashicons-id-alt',
-		'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-	);
-	register_post_type( 'sr_poet', $args );
+		"label" => __( 'Testimonials', 'baaz-testimonials' ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => false,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => true,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( 
+            'slug'          => __( 'testimonial', 'baaz-testimonials' ), 
+            "with_front"    => false,  
+            ),
+		"query_var" => true,
+		"menu_position" => 20,
+		"menu_icon" => "dashicons-megaphone",
+   		"supports" => array( 'title', 'page-attributes' ),
 
-	// End of cptui_register_my_cpts()
+	);
+
+	register_post_type( "cws_testimonial", $args );
 }
+/*
+ * Clean up title placeholder
+ */
+add_filter('gettext','baaz_testimonial_name');
+function baaz_testimonial_name( $input ) {
+
+    global $post_type;
+
+    if( is_admin() && 'Enter title here' == $input && 'cws_testimonial' == $post_type )
+        return __( 'Testimonial Author', 'baaz-testimonials' );
+    return $input;
+}
+

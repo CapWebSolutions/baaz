@@ -20,8 +20,21 @@
 // Plugin Directory.
 define( 'CWS_DIR', dirname( __FILE__ ) );
 
+/**
+ * Get the CMB2 bootstrap going!
+ */
+
+if ( file_exists( __DIR__ . '/lib/cmb2/init.php' ) ) {
+  require_once __DIR__ . '/lib/cmb2/init.php';
+} elseif ( file_exists(  __DIR__ . '/lib/CMB2/init.php' ) ) {
+  require_once __DIR__ . '/lib/CMB2/init.php';
+}
+
 // Post Types.
-// include_once( CWS_DIR . '/lib/functions/post-types.php' );
+include_once( CWS_DIR . '/lib/functions/post-types.php' );
+
+// Metaboxes.
+include_once( CWS_DIR . '/lib/functions/metaboxes.php' );
 
 // General.
 // include_once( CWS_DIR . '/lib/functions/general.php' );

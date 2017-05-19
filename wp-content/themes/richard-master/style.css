@@ -111,16 +111,16 @@ html {
 
 /* Chrome fix */
 body > div {
-    font-size: 1.8rem;
+    font-size: 2.4rem; /* default 1.8rem */
 }
 
 body {
 	background-color: #fff;
 	color: #414042;
 	font-family: 'Yantramanav', sans-serif;
-	font-size: 18px;
-	font-size: 1.8rem;
-	font-weight: 300;
+	font-size: 24px;   /* default 18px */
+	font-size: 2.4rem; /* default 1.8rem */
+	font-weight: 500;  /* default to 300 */ 
 	line-height: 1.5;
 	margin: 0;
 }
@@ -922,9 +922,9 @@ img.alignright,
 }
 
 .featured-content .entry-title {
-	font-size: 18px;
-	font-size: 1.8rem;
-	font-weight: 300;
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: 600;
 	margin-bottom: 0;
 }
 
@@ -935,6 +935,7 @@ img.alignright,
 
 .featured-content .entry-content {
 	padding: 10px 0 0;
+	font-weight: 600;
 }
 
 .featured-content .entry-content p:last-child {
@@ -1000,12 +1001,26 @@ FAQs
 --------------------------------------------- */
 a.faq-tease:link {
 	font-weight: 600;
-	font-size: 20px;
-	font-size: 2.0rem;
+	/*font-size: 20px;*/
+	/*font-size: 2.0rem;*/
 	color: #000 !important;
 }
 a.faq-tease:hover {
 	color: #8ECA05;
+}
+
+/* 
+Testimonials
+--------------------------------------------- */
+.testimonial-container {
+	font-style: italic;
+}
+p.quote-meta {
+	text-align: right;
+	line-height: .8;
+}
+.testimonial .entry {
+	font-style: italic;
 }
 /* 
 Footer Call Now Box
@@ -2972,7 +2987,7 @@ button.menu-toggle {
 }
 
 .attorney-content .intro-text {
-	border-bottom: 1px solid #cfd0d2;
+	/*border-bottom: 1px solid #cfd0d2;*/
 	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1.5;
@@ -3845,8 +3860,8 @@ ul li.comment {
 
 .footer-widgets-1 .widget {
 	margin: 0 auto;
-	max-width: 550px;
-	padding: 60px 20px 60px 20px;
+	max-width: 1280px;
+	/*padding: 60px 20px 60px 20px;*/
 	width: 90%;
 }
 
@@ -4523,6 +4538,10 @@ body.richard-option2.single-tribe_events .tribe-events-content ul > li:before,
 .richard-option2 .cta-wrap .cta-box span.cta-icon.tax-law {
 	background-image: url(images/richard-option2/cta-TaxLaw.png);
 }
+.richard-option2 .footer-widgets-1 {
+	background: #fff;
+	border: 3px solid #8eca05;
+}
 
 /* ## Color Option 3
 ------------------------------------- */
@@ -5140,6 +5159,126 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 .richard-option5 .cta-wrap .cta-box span.cta-icon.tax-law {
 	background-image: url(images/richard-option5/cta-TaxLaw.png);
 }
+
+
+
+/* # Footer Call To Actions
+---------------------------------------------------------------------------------------------------- */
+
+.footer-cta-container .footer-widgets-1 .widget,
+.widget-area .footer-widgets-1 .footer-widget-area {
+	margin: 10px auto;
+	max-width: 1280px;
+	width: 100%;
+}
+#genesis-footer-widgets .widget-area .footer-widgets-1 .footer-widget-area {
+    background: #fff;
+    border: 3px solid #8eca05;
+    width: 100%;
+}
+.footer-widgets-1, .footer-widgets-2 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.footer-cta-container .footer-cta.odd {
+	clear: both;
+	margin-left: 0;
+}
+
+.footer-cta-container > .first.footer-cta.entry.one-third {
+	clear: both;
+	margin-left: 50px;
+}
+
+.footer-cta-container .fc-name {
+	color:  #8ECA05;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: 600;
+	line-height: 1.375;
+	margin: 0;
+}
+
+.footer-cta-container .fc-icon-title {
+	margin-right: 20px;
+	text-align: center;
+}
+
+.footer-cta-container .fc-icon-title a {
+	background-color: #f4f5f5;
+	display: block;
+	padding: 24px 3px;
+	width: 134px;
+}
+
+.footer-cta-container .fc-icon-title a:hover {
+	background-color: #e1e1e1;
+}
+
+.footer-cta-container .footer-cta-icon {
+	display: block;
+	margin: 0 auto;
+	max-width: 64px;
+}
+
+.footer-cta-container .material-icons,
+.footer-cta-container .genericon {
+	color: #8ECA05;
+	font-size: 55px;
+}
+
+.footer-cta-container span.footer-cta-icon {
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 64px;
+	text-indent: -9999px;
+	width: 64px;
+}
+
+.single-wsm_practice-area .footer-cta-container span.footer-cta-icon {
+	height: 90px;
+	max-width: 90px;
+	width: 90px;
+}
+
+
+.footer-cta-container .cta-bar .cta-bar-title a {
+	color: #fff;
+}
+
+.footer-cta-container .cta-bar .cta-bar-title a:hover {
+	color: #efefef;
+}
+
+.footer-cta-container .cta-bar .cta-bar-content {
+	color: #fff;
+	float: right;
+	line-height: 1.2;
+	max-width: 66%;
+}
+.footer-cta-container .footer-widgets-1 p, 
+.footer-cta-container .footer-widgets-1 a, 
+.footer-cta-container .footer-widgets-1 h1, 
+.footer-cta-container .footer-widgets-1 h2, 
+.footer-cta-container .footer-widgets-1 h3, 
+.footer-cta-container .footer-widgets-1 h4, 
+.footer-cta-copntainer .footer-widgets-1 h5 {
+     color: #8ECA05; 
+}
+
+.footer-cta-container .entry {
+	margin: 2% auto;
+}
+
+
+
+
+
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */

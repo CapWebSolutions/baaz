@@ -32,8 +32,8 @@ class RICHARD_Settings extends Genesis_Admin_Boxes {
 		$menu_ops = array(
 			'submenu' => array(
 				'parent_slug' => 'genesis',
-				'page_title'  => __( 'Richard Settings', 'richard' ),
-				'menu_title'  => __( 'Richard Settings', 'richard' ),
+				'page_title'  => __( 'BAAZ Settings', 'richard' ),
+				'menu_title'  => __( 'BAAZ Settings', 'richard' ),
 				'capability' => 'manage_options',
 			)
 		);
@@ -58,14 +58,9 @@ class RICHARD_Settings extends Genesis_Admin_Boxes {
 			'wsm_practice_area_top_image' => '[child]/images/top-image.jpg',
 			'wsm_attorney_top_image' => '[child]/images/top-image.jpg',
 			'wsm_search' => 1,
-			'wsm_phone' => '248-555-1212',
-			'wsm_info' => '30100 Telegraph Road  |  Birmingham, MI 48382 <br />248-555-1212 p  | 248-555-4422 f',
-			'wsm_copyright' => '[footer_copyright] Richard Lawyer Theme  |  Richard is a Genesis Theme Designed by Web Savvy Marketing',
-			'wsm_extras' => '<img class="alignright" src="[url]/wp-content/uploads/2016/05/tl.png" alt="The Best Lawyers of America" />
-<img class="alignright" src="[url]/wp-content/uploads/2016/05/sls.png" alt="Best Law Firms" />
-<img class="alignright" src="[url]/wp-content/uploads/2016/05/cuafew.png" alt="Award Winner Logo" />
-<img class="alignright" src="[url]/wp-content/uploads/2016/05/blfldl.png" alt="Top Law Firms" />
-<img class="alignright" src="[url]/wp-content/uploads/2016/05/tblis.png" alt="" />',
+			'wsm_phone' => ' ',
+			'wsm_info' => ' ',
+			'wsm_copyright' => ' ',
 			);
 
 		// Create the Admin Page
@@ -128,11 +123,11 @@ class RICHARD_Settings extends Genesis_Admin_Boxes {
 	 * @since 1.0.0
 	 */
 	function metaboxes() {
-		add_meta_box('richard_attorneys_metabox', __( 'Attorneys Main', 'richard' ), array( $this, 'richard_attorneys_metabox' ), $this->pagehook, 'main', 'high');
-		add_meta_box('richard_top_image_metabox', __( 'Default Top Image', 'richard' ), array( $this, 'richard_top_image_metabox' ), $this->pagehook, 'main', 'high');
+		// add_meta_box('richard_attorneys_metabox', __( 'Attorneys Main', 'richard' ), array( $this, 'richard_attorneys_metabox' ), $this->pagehook, 'main', 'high');
+		// add_meta_box('richard_top_image_metabox', __( 'Default Top Image', 'richard' ), array( $this, 'richard_top_image_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('richard_navigation_metabox', __( 'Menu Extras', 'richard' ), array( $this, 'richard_navigation_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('richard_footer_info_metabox', __( 'Footer Info', 'richard' ), array( $this, 'richard_footer_info_metabox' ), $this->pagehook, 'main', 'high');
-		add_meta_box('wsm_upate_notifications_metabox', __( 'Update Notifications', 'richard' ), array( $this, 'wsm_upate_notifications_metabox' ), $this->pagehook, 'main', 'high');
+		// add_meta_box('wsm_upate_notifications_metabox', __( 'Update Notifications', 'richard' ), array( $this, 'wsm_upate_notifications_metabox' ), $this->pagehook, 'main', 'high');
 	}
 
 	/**
@@ -167,8 +162,8 @@ class RICHARD_Settings extends Genesis_Admin_Boxes {
 	 */
 	function richard_navigation_metabox() {
 
-		echo '<p><input type="checkbox" name="' . $this->get_field_name( 'wsm_search' ) . '" id="' . $this->get_field_id( 'wsm_search' ) . '" value="1"';
-        checked( 1, $this->get_field_value( 'wsm_search' ) ); echo '/><strong>' . __( 'Enable Search in Primary Menu', 'richard' ) . '</strong></p>';
+		// echo '<p><input type="checkbox" name="' . $this->get_field_name( 'wsm_search' ) . '" id="' . $this->get_field_id( 'wsm_search' ) . '" value="1"';
+        // checked( 1, $this->get_field_value( 'wsm_search' ) ); echo '/><strong>' . __( 'Enable Search in Primary Menu', 'richard' ) . '</strong></p>';
 
 		echo '<p><strong>' . __( 'Add Phone Number to Secondary Menu', 'richard' ) . '</strong><br>';
 		echo '<input class="medium-text" type="text" name="' . $this->get_field_name( 'wsm_phone' ) . '" id="' . $this->get_field_id( 'wsm_phone' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_phone' ) ) . '" /></p>';
@@ -187,9 +182,9 @@ class RICHARD_Settings extends Genesis_Admin_Boxes {
 		echo '<p><strong>' . __( 'Copyright Info', 'richard' ) . '</strong><br>';
 		echo '<input class="large-text" type="text" name="' . $this->get_field_name( 'wsm_copyright' ) . '" id="' . $this->get_field_id( 'wsm_copyright' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_copyright' ) ) . '" /></p>';
 
-		echo '<p><strong>' . __( 'Footer Right Content', 'richard' ) . '</strong><br>';
-		echo __( '(Some HTML is allowed.)', 'richard' ) . '<br>';
-		echo '<textarea class="large-text" name="' . $this->get_field_name( 'wsm_extras' ) . '" cols="78" rows="8">' . esc_textarea( $this->get_field_value( 'wsm_extras' ) ) . '</textarea><br><small><em>(Recommended image size for awards icons is 64px wide by 60px high)</em></small></p>';
+		// echo '<p><strong>' . __( 'Footer Right Content', 'richard' ) . '</strong><br>';
+		// echo __( '(Some HTML is allowed.)', 'richard' ) . '<br>';
+		// echo '<textarea class="large-text" name="' . $this->get_field_name( 'wsm_extras' ) . '" cols="78" rows="8">' . esc_textarea( $this->get_field_value( 'wsm_extras' ) ) . '</textarea><br><small><em>(Recommended image size for awards icons is 64px wide by 60px high)</em></small></p>';
 
 	}
 

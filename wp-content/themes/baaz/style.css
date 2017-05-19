@@ -4124,6 +4124,7 @@ body.baaz-option2.single-tribe_events .tribe-events-content ol li::before,
 	color: #8ECA00; 
 }
 
+
 .baaz-option2 .sidebar div.gform_wrapper .gform_footer input.button,
 .baaz-option2 .sidebar div.gform_wrapper .gform_footer input[type="submit"],
 .baaz-option2 .sidebar .call-to-action-bar .more-link a:hover,
@@ -4287,6 +4288,15 @@ body.baaz-option2.single-tribe_events .tribe-events-content ul > li:before,
 	background-image: url(images/baaz-option2/cta-TaxLaw.png);
 }
 
+.baaz-option2 .footer-widgets, 
+.baaz-option2 .footer-widgets-1,
+.baaz-option2 .cta-wrap,
+.baaz-option2 .sidebar .cta-wrap .cta-title:hover,
+#genesis-footer-widgets > div > div,
+.widget-area.footer-widgets-1.footer-widget-area {
+	background: red;
+	border: 3px solid black;
+}
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 

@@ -33,15 +33,15 @@ richard_init();
 add_editor_style( 'editor-style.css' );
 
 /** Create additional color style options */
-add_theme_support( 'genesis-style-selector',
-	array(
-		'richard-option1' => 'Red',
-		'richard-option2' => 'Green',
-		'richard-option3' => 'Orange',
-		'richard-option4' => 'Dark Blue',
-		'richard-option5' => 'Rose',
-	)
-);
+// add_theme_support( 'genesis-style-selector',
+// 	array(
+// 		'richard-option1' => 'Red',
+// 		'richard-option2' => 'Green',
+// 		'richard-option3' => 'Orange',
+// 		'richard-option4' => 'Dark Blue',
+// 		'richard-option5' => 'Rose',
+// 	)
+// );
 
 // Force Stupid IE to NOT use compatibility mode
 add_filter( 'wp_headers', 'richard_keep_ie_modern' );
@@ -111,33 +111,6 @@ function sp_body_class( $classes ) {
 	if ( $feature_image )
 		$classes[] = 'has-featured-image';
 		return $classes;
-}
-
-// Customize the Search Box
-add_filter( 'genesis_search_button_text', 'custom_search_button_text' );
-function custom_search_button_text( $text ) {
-    return esc_attr( 'Go', 'richard' );
-}
-
-
-// Modify the author box display
-add_filter( 'genesis_author_box', 'richard_author_box' );
-function richard_author_box() {
-	$authinfo = '';
-	$authdesc = get_the_author_meta( 'description' );
-
-	if( !empty( $authdesc ) ) {
-		$authinfo .= sprintf( '<section %s>', genesis_attr( 'author-box' ) );
-		$authinfo .= get_avatar( get_the_author_id() , 168, '', get_the_author_meta( 'display_name' ) . '\'s avatar' ) ;
-		$authinfo .= '<h3 class="author-box-title">' . __( 'About ', 'richard' ) . get_the_author_meta( 'display_name' ) . '</h3>';
-		$authinfo .= '<div class="author-box-content" itemprop="description">';
-		$authinfo .= '<p>' . get_the_author_meta( 'description' ) . '</p>';
-		$authinfo .= '</div>';
-		$authinfo .= '</section>';
-	}
-	if ( is_author() || is_single() ) {
-		echo $authinfo;
-	}
 }
 
 // Customize the entry meta in the entry header
@@ -211,27 +184,6 @@ add_action( 'genesis_header_right', 'genesis_do_nav' );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_before_header', 'genesis_do_subnav' );
 
-
-// Add Search Icon to Primary Menu
-add_filter( 'genesis_nav_items', 'be_search_icons', 10, 2 );
-add_filter( 'wp_nav_menu_items', 'be_search_icons', 10, 2 );
-function be_search_icons( $menu, $args ) {
-
-	$search = genesis_get_option( 'wsm_search', 'richard-settings' );
-
-	$args = (array)$args;
-	if ( 'primary' !== $args['theme_location'] || empty( $search ) ) {
-		return $menu;
-	}
-
-	ob_start();
-	get_search_form();
-	$search = ob_get_clean();
-	$menu_right  .= '<li class="search menu-item last"><span id="show_hide">' . __( 'Search', 'richard' ) . '</span><div class="slidingDiv" style="display:none;">' . $search . '</div></li>';
-	return $menu . $menu_right;
-}
-
-
 // Add Phone Info to Secondary Menu
 add_filter( 'genesis_nav_items', 'be_phone_info', 10, 2 );
 add_filter( 'wp_nav_menu_items', 'be_phone_info', 10, 2 );
@@ -242,14 +194,16 @@ function be_phone_info( $menu, $args ) {
 	if ( 'secondary' !== $args['theme_location'] || empty( $phone ) ) {
 		return $menu;
 	}
-
-	$menu_right  .= '<li class="phone menu-item last"><a href="tel:' . strip_tags( $phone ) . '">' . strip_tags( $phone ) . '</a></li>';
+	$menu_right  .= '<li class="phone menu-item last"><a href="tel:' . strip_tags( $phone ) . '">' . '<i class="material-icons">phone_in_talk</i>' . strip_tags( $phone ) . '</a></li>';
 	return $menu . $menu_right;
 
 }
 
+// Remove comments altogether
+remove_action( 'genesis_comment_form', 'genesis_do_comment_form' );
+
 // Move Genesis Comments
-add_action( 'genesis_before_comments' , 'richard_move_comments' );
+// add_action( 'genesis_before_comments' , 'richard_move_comments' );
 function richard_move_comments () {
   if ( is_single() && have_comments() ) {
     remove_action( 'genesis_comment_form', 'genesis_do_comment_form' );
@@ -257,13 +211,6 @@ function richard_move_comments () {
   }
 }
 
-
-// Change size of comment avatars.
-add_filter( 'genesis_comment_list_args', 'childtheme_comment_list_args' );
-function childtheme_comment_list_args( $args ) {
-    $args['avatar_size'] = 64;
-	return $args;
-}
 
 // Unregister Layouts
 genesis_unregister_layout( 'content-sidebar-sidebar' );
@@ -322,3 +269,4 @@ if ( ! is_singular( 'post' ) ) return;
 
 // Gravity Forms anchor
 add_filter( 'gform_confirmation_anchor', '__return_true' );
+

@@ -26,6 +26,7 @@ if ( file_exists( CHILD_DIR . '/lib/metabox/init.php' ) ) {
 	require_once dirname( __FILE__ ) . '/CMB2/init.php';
 }
 
+
 add_action( 'cmb2_init', 'richard_register_about_page_metabox' );
 /**
  * Single Post Meta

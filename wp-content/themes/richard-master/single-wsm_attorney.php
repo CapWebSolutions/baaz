@@ -21,14 +21,14 @@ $post_id = get_the_ID( $post->ID );
 
 $attorney_img = genesis_get_image( array( 'format' => 'html', 'size' => 'attorney', 'attr' => array( 'class' => 'featured-image alignone' ) ) );
 $attorney_contact_heading = get_post_meta( $post_id , '_richard_attorney_contact_heading', true );
-$attorney_address = get_post_meta( $post_id , '_richard_attorney_contact_address', true );
-$attorney_phone = get_post_meta( $post_id , '_richard_attorney_contact_phone', true );
-$attorney_fax = get_post_meta( $post_id , '_richard_attorney_contact_fax', true );
-$attorney_email = get_post_meta( $post_id , '_richard_attorney_contact_email', true );
-$attorney_linkedin = get_post_meta( $post_id , '_richard_attorney_contact_linkedin', true );
-$attorney_facebook = get_post_meta( $post_id , '_richard_attorney_contact_facebook', true );
-$attorney_twitter = get_post_meta( $post_id , '_richard_attorney_contact_twitter', true );
-$attorney_gplus = get_post_meta( $post_id , '_richard_attorney_contact_gplus', true );
+// $attorney_address = get_post_meta( $post_id , '_richard_attorney_contact_address', true );
+// $attorney_phone = get_post_meta( $post_id , '_richard_attorney_contact_phone', true );
+// $attorney_fax = get_post_meta( $post_id , '_richard_attorney_contact_fax', true );
+// $attorney_email = get_post_meta( $post_id , '_richard_attorney_contact_email', true );
+// $attorney_linkedin = get_post_meta( $post_id , '_richard_attorney_contact_linkedin', true );
+// $attorney_facebook = get_post_meta( $post_id , '_richard_attorney_contact_facebook', true );
+// $attorney_twitter = get_post_meta( $post_id , '_richard_attorney_contact_twitter', true );
+// $attorney_gplus = get_post_meta( $post_id , '_richard_attorney_contact_gplus', true );
 
 echo '<div class="attorney-left-info">';
 
@@ -36,7 +36,7 @@ echo $attorney_img;
 
 echo '<div class="left-info">';
 
-if ( ! empty( $attorney_contact_heading ) ) { echo '<h4 class="info-heading">'. $attorney_contact_heading .'</h4>'; }
+// if ( ! empty( $attorney_contact_heading ) ) { echo '<h4 class="info-heading">'. $attorney_contact_heading .'</h4>'; }
 
 	if ( $attorney_address ) {  echo '<p class="attorney-address">'. $attorney_address .'</p>'; }
 	if ( $attorney_phone ) {  echo '<p class="attorney-phone">'. strip_tags( $attorney_phone ) .'</p>'; }
