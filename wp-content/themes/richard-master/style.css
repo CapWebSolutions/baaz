@@ -928,6 +928,11 @@ img.alignright,
 	margin-bottom: 0;
 }
 
+#wsmfeatured-post-2 > div > article > header > h4 > a {
+	font-size: 30px;
+	font-size: 3.04rem;
+}
+
 .featured-content .entry-header .entry-meta a,
 .featured-content .entry-header .entry-meta {
 	font-weight: 300;
@@ -6157,6 +6162,9 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 	.richard-option5 .genesis-nav-menu .slidingDiv {
 		background-color: #333434;
 	}
+	.footer-cta-container > .first.footer-cta.entry.one-third {
+		margin-left: inherit; 
+	}
 
 }
 
@@ -6277,6 +6285,11 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 		margin: 0;
 		width: 100%;
 	}
+
+	.footer-cta-container > .first.footer-cta.entry.one-third, 
+	.footer-cta-container .entry {
+		margin: 2% 25%;
+		}
 
 }
 

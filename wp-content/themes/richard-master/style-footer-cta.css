@@ -1,0 +1,95 @@
+
+/* # Footer Call To Actions
+---------------------------------------------------------------------------------------------------- */
+
+.footer-cta-container .footer-cta.odd {
+	clear: both;
+	margin-left: 0;
+}
+
+.footer-cta-container .fc-name {
+	color: #005060;
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 1.375;
+	margin: 0;
+}
+
+.footer-cta-container .fc-icon-title {
+	margin-right: 20px;
+	text-align: center;
+}
+
+.footer-cta-container .fc-icon-title a {
+	background-color: #f4f5f5;
+	display: block;
+	padding: 24px 3px;
+	width: 134px;
+}
+
+.footer-cta-container .fc-icon-title a:hover {
+	background-color: #e1e1e1;
+}
+
+.footer-cta-container .footer-cta-icon {
+	display: block;
+	margin: 0 auto;
+	max-width: 64px;
+}
+
+.footer-cta-container span.footer-cta-icon {
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 64px;
+	text-indent: -9999px;
+	width: 64px;
+}
+
+.single-wsm_practice-area .footer-cta-container span.footer-cta-icon {
+	height: 90px;
+	max-width: 90px;
+	width: 90px;
+}
+
+.footer-cta-container .cta-bar {
+	background-color: #0094ae;
+	padding: 40px 30px;
+}
+
+.footer-cta-container .cta-bar .cta-bar-title {
+	color: #fff;
+	float: left;
+	font-size: 28px;
+	font-size: 2.8rem;
+	line-height: 1;
+	margin: 0;
+	max-width: 32%;
+	text-transform: uppercase;
+}
+
+.footer-cta-container .cta-bar .cta-bar-title a {
+	color: #fff;
+}
+
+.footer-cta-container .cta-bar .cta-bar-title a:hover {
+	color: #efefef;
+}
+
+.footer-cta-container .cta-bar .cta-bar-content {
+	color: #fff;
+	float: right;
+	line-height: 1.2;
+	max-width: 66%;
+}
+.footer-cta-container .footer-widgets-1 p, 
+.footer-cta-container .footer-widgets-1 a, 
+.footer-cta-container .footer-widgets-1 h1, 
+.footer-cta-container .footer-widgets-1 h2, 
+.footer-cta-container .footer-widgets-1 h3, 
+.footer-cta-container .footer-widgets-1 h4, 
+.footer-cta-copntainer .footer-widgets-1 h5 {
+     color: #8ECA05; 
+}
