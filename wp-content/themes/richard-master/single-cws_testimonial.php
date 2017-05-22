@@ -20,23 +20,15 @@ echo '<div class="testimonial-container">';
 
 // Featured Testimonial
 
-$quote_comments = get_post_meta( $post_id , '_baaz_testimonial_quote_comments', true );
-$quote_name = get_post_meta( $post_id , '_baaz_testimonial_quote_name', true );
-$quote_location = get_post_meta( $post_id , '_baaz_testimonial_quote_location', true );
-
-	if(!empty( $quote_comments )) {
-
-	echo '<div class="wsm-featured-testimonial"'. $do_bg .'><div class="wrap">';
-			echo '<blockquote>';
-			echo strip_tags( $quote_comments );
-			echo '</blockquote>';
-			echo '<p class="quote-name">'. $quote_name .', ' . $quote_location . '</p>';
-
-	echo '</div></div>';
-
-	}
-
-
-}
+echo '<div id="testimonials">';
+	echo '<div class="one-fourth first">';
+		echo '<div class="quote-obtuse"><div class="pic">'. get_the_post_thumbnail( $id, array(150,150) ).'</div></div>';
+		echo '<div style="margin-top:20px;line-height:20px;text-align:right;"><cite>'.genesis_get_custom_field( '_cd_client_name' ).'</cite><br />'.genesis_get_custom_field( '_cd_client_title' ).'</div>';
+		echo '</div>';	
+		echo '<div class="three-fourths" style="border-bottom:1px solid #DDD;">';
+		echo '<h3>' . get_the_title() . '</h3>';
+		echo '<blockquote><p>' . get_the_content() . '</p></blockquote>';	
+	echo '</div>';
+echo '</div>';
 
 genesis();

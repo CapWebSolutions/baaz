@@ -51,17 +51,17 @@ function cptui_register_my_cpts() {
 		"map_meta_cap" => true,
 		"hierarchical" => false,
 		"rewrite" => array( 
-            'slug'          => __( 'testimonial', 'baaz-testimonials' ), 
+            'slug'          => __( 'cws_testimonials', 'baaz-testimonials' ), 
             "with_front"    => false,  
             ),
 		"query_var" => true,
 		"menu_position" => 20,
 		"menu_icon" => "dashicons-megaphone",
-   		"supports" => array( 'title', 'page-attributes' ),
+   		"supports" => array( 'title', 'editor', 'page-attributes','genesis-cpt-archives-settings' ),
 
 	);
 
-	register_post_type( "cws_testimonial", $args );
+	register_post_type( "cws_testimonials", $args );
 }
 /*
  * Clean up title placeholder
@@ -71,8 +71,8 @@ function baaz_testimonial_name( $input ) {
 
     global $post_type;
 
-    if( is_admin() && 'Enter title here' == $input && 'cws_testimonial' == $post_type )
-        return __( 'Testimonial Author', 'baaz-testimonials' );
+    if( is_admin() && 'Enter title here' == $input && 'cws_testimonials' == $post_type )
+        return __( 'Testimonial Client Name', 'baaz-testimonials' );
     return $input;
 }
 
