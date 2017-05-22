@@ -1011,7 +1011,7 @@ a.faq-tease:link {
 	color: #000 !important;
 }
 a.faq-tease:hover {
-	color: #8ECA05;
+	color: #00cc44;
 }
 
 /* 
@@ -1038,7 +1038,7 @@ Footer Call Now Box
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
-	color: #8ECA05;
+	color: #00cc44;
 	font-size: 36px;
 	font-weight: 700;
 	padding: 20% 0;
@@ -1048,8 +1048,8 @@ Footer Call Now Box
 }
 .right-footer {
 	width: 50vw;
-	color: #8ECA05;
-	border: 5px #8ECA05 solid;
+	color: #00cc44;
+	border: 5px #00cc44 solid;
 	box-sizing: border-box;
 	height: 100%;
 }
@@ -4383,7 +4383,7 @@ body.richard-option2.single-tribe_events .tribe-events-content ol li::before,
 .richard-option2 .site-title a,
 .richard-option2 .site-title a:hover,
 .richard-option2 .site-title a:focus {
-	color: #8ECA05; /* Color Option Main */
+	color: #00cc44; /* Color Option Main */
 }
 
 .richard-option2 .sidebar div.gform_wrapper .gform_footer input.button,
@@ -4392,7 +4392,7 @@ body.richard-option2.single-tribe_events .tribe-events-content ol li::before,
 .richard-option2 .call-to-action-bar .more-link a:hover,
 .richard-option2.home .content .cta-wrap .cta-title,
 .richard-option2 .pa-container .pa-name {
-	color: #8ECA05; /* Alternate */
+	color: #00cc44; /* Alternate */
 }
 
 .richard-option2 .sidebar .widget_recent_comments a:hover,
@@ -4455,7 +4455,7 @@ body.richard-option2.single-tribe_events .tribe-events-content ol li::before,
 .richard-option2 .wsm-featured-widget .featured-content .more-link a,
 .richard-option2 .widget-social a.genericon,
 .richard-option2 .genesis-nav-menu .sub-menu a {
-	background-color: #8ECA05; /* Color Option Main */
+	background-color: #00cc44; /* Color Option Main */
 }
 
 .richard-option2 .comment-reply a:hover,
@@ -4473,7 +4473,7 @@ body.richard-option2.single-tribe_events .tribe-events-content ol li::before,
 .richard-option2 .genesis-nav-menu .sub-menu a:hover,
 .richard-option2 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .richard-option2 .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-	background-color: #8ECA05; /* Alternate */
+	background-color: #00cc44; /* Alternate */
 }
 
 .richard-option2 .call-to-action-bar .more-link a {
@@ -4483,7 +4483,7 @@ body.richard-option2.single-tribe_events .tribe-events-content ol li::before,
 .richard-option2 .sidebar .call-to-action-bar .more-link a:hover,
 .richard-option2 .call-to-action-bar .more-link a:hover,
 .richard-option2 .genesis-nav-menu .sub-menu a {
-	border-color: #8ECA05;
+	border-color: #00cc44;
 }
 
 .richard-option2 .footer-widgets .featured-content article:nth-child(2n+1)::after {
@@ -4547,7 +4547,7 @@ body.richard-option2.single-tribe_events .tribe-events-content ul > li:before,
 }
 .richard-option2 .footer-widgets-1 {
 	background: #fff;
-	border: 3px solid #8eca05;
+	border: 3px solid #00cc44;
 }
 
 /* ## Color Option 3
@@ -5180,7 +5180,7 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 }
 #genesis-footer-widgets .widget-area .footer-widgets-1 .footer-widget-area {
     background: #fff;
-    border: 3px solid #8eca05;
+    border: 3px solid #00cc44;
     width: 100%;
 }
 .footer-widgets-1, .footer-widgets-2 {
@@ -5201,7 +5201,7 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 }
 
 .footer-cta-container .fc-name {
-	color:  #8ECA05;
+	color:  #00cc44;
 	font-family: 'Yantramanav', sans-serif;
 	font-size: 24px;
 	font-size: 2.4rem;
@@ -5234,7 +5234,7 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 
 .footer-cta-container .material-icons,
 .footer-cta-container .genericon {
-	color: #8ECA05;
+	color: #00cc44;
 	font-size: 55px;
 }
 
@@ -5275,7 +5275,7 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 .footer-cta-container .footer-widgets-1 h3, 
 .footer-cta-container .footer-widgets-1 h4, 
 .footer-cta-copntainer .footer-widgets-1 h5 {
-     color: #8ECA05; 
+     color: #00cc44; 
 }
 
 .footer-cta-container .entry {
@@ -6082,13 +6082,13 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 	}
 
 	.richard-option2 .nav-primary .genesis-nav-menu .menu-item a {
-		background-color: #8ECA05;
+		background-color: #00cc44;
 		border-color: #03ca77;
 	}
 
 	.richard-option2 .menu-toggle::before,
 	.richard-option2 .menu-toggle.activated::before {
-		color: #8ECA05;
+		color: #00cc44;
 	}
 
 	.richard-option2 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item a,
@@ -6099,7 +6099,7 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 	.richard-option2 .nav-primary .sub-menu .current-menu-item > a,
 	.richard-option2 .nav-primary .sub-menu .menu-item a:hover,
 	.richard-option2 .genesis-nav-menu .slidingDiv {
-		background-color: #8ECA05;
+		background-color: #00cc44;
 	}
 
 	.richard-option3 .nav-primary .genesis-nav-menu .menu-item a {
