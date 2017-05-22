@@ -1903,6 +1903,12 @@ div.gform_wrapper li.gfield.gfield_error.gfield_contains_required,
 	color: #790000;
 }
 
+/* Special handling for GF_2 on contact page for and/or between email/phone fields */
+.two-thirds > .gform_wrapper .top_label li.gfield.gf_inline,
+.two-thirds > .gform_wrapper .top_label li.gfield.gf_inline {
+	vertical-align: text-bottom;
+}
+
 /* # Skip Links
 ---------------------------------------------------------------------------------------------------- */
 
@@ -5306,6 +5312,10 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
+
+
+readyclass.min.css?ver=2.2.2:1
+.gform_wrapper .top_label li.gfield.gf_inline 
 @media only screen and (max-width: 1198px) {
 
 	.home .content .wsm-featured-widget .text-content-wrap {
@@ -5740,6 +5750,8 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 }
 
 @media only screen and (max-width: 680px) {
+
+
 
 	.site-header {
 		min-height: inherit;
