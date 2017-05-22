@@ -2804,9 +2804,9 @@ button.menu-toggle {
 	color: #fff;
 	font-size: 20px;
 	font-size: 2rem;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 1.2;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 .home-slider div.soliloquy-container .soliloquy-caption-inside h1 {
