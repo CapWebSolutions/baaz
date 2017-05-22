@@ -2718,7 +2718,9 @@ div.jw-display-icon-container .jw-icon-display {
 	margin-right: 2px;
 	vertical-align: middle;
 }
-
+.nav-secondary .menu-item i.material-icons {
+font-size: 40px;
+}
 .nav-secondary .genesis-nav-menu .sub-menu a {
 	color: #fff;
 }
