@@ -249,7 +249,11 @@ genesis_register_sidebar( array(
 	'name'			=> __( 'Footer Social Media', 'richard' ),
 	'description'	=> __( 'This is the Footer Social Media Icons Section.', 'richard' ),
 ) );
-
+genesis_register_sidebar( array(
+	'id'			=> 'pre-footer-ctas',
+	'name'			=> __( 'Pre Footer Call To Action', 'richard' ),
+	'description'	=> __( 'This is the Pre-Footer Call To Action Widget Section.', 'richard' ),
+) );
 
 // Remove Genesis Blog Template
 add_filter( 'theme_page_templates', 'richard_remove_genesis_page_templates' );
