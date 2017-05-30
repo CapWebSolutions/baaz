@@ -31,10 +31,10 @@ if ( file_exists( __DIR__ . '/lib/cmb2/init.php' ) ) {
 }
 
 // Post Types.
-include_once( CWS_DIR . '/lib/functions/post-types.php' );
+// include_once( CWS_DIR . '/lib/functions/post-types.php' );
 
 // Metaboxes.
-include_once( CWS_DIR . '/lib/functions/metaboxes.php' );
+// include_once( CWS_DIR . '/lib/functions/metaboxes.php' );
 
 // General.
 // include_once( CWS_DIR . '/lib/functions/general.php' );

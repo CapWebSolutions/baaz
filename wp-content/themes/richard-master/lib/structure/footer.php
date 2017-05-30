@@ -21,6 +21,7 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'wsm_child_do_footer' );
 function wsm_child_do_footer() {
 	if ( is_active_sidebar('pre-footer-ctas') ) {
+		echo '<div class="clearfix"></div>';
 		echo '<div class="pre-footer-ctas">';
 		genesis_widget_area( 'pre-footer-ctas', array( 'before' => '<div class="pre-footer-ctas">', 'after' => '</div>') );
 		echo '</div>';

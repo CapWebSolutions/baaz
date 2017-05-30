@@ -189,7 +189,7 @@ i {
 blockquote {
 	background: url(images/blockquote.png) no-repeat 0 5px;
 	display: block;
-	line-height: 1.2;
+	line-height: 1.5;
 	margin: 40px 0;
 	padding-left: 60px;
 }
@@ -1027,6 +1027,25 @@ p.quote-meta {
 .testimonial .entry {
 	font-style: italic;
 }
+
+#testimonials .client-contact-info {
+    margin: 0 0 25px 0; 
+    float: right;
+    font-weight: lighter;
+    font-size: 18px; 
+    }
+#testimonials .testimonial-quote {
+    text-align: center;
+    padding: 3px 0 0 65px; 
+    line-height: 1.5em; 
+    font-size: 20px; 
+    font-style: italic; 
+    margin: 10px 0 0 0;
+    }
+#testimonials p {
+    margin: 0;
+}
+
 /* 
 Footer Call Now Box
 --------------------------------------------- */
@@ -1593,6 +1612,13 @@ Social Icons
 
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */
+
+/* ## Quick and Easy FAQs
+--------------------------------------------- */
+#text-6 > div > div > center > div:nth-child(n) > div.qe-toggle-title,
+.home-main .widget-area .qe-faq-toggle .qe-toggle-title {
+	border: none;
+}
 
 /* ## Genesis eNews Extended
 --------------------------------------------- */
@@ -2788,10 +2814,10 @@ button.menu-toggle {
 .home-slider div.soliloquy-container .soliloquy-caption.soliloquy-caption-bottom,
 .home-slider div.soliloquy-container .soliloquy-caption.soliloquy-caption-top {
 	bottom: auto;
-	left: 50%;
-	margin-left: -307px;
+	/*left: 50%;*/
+	/*margin-left: -307px;*/
 	top: 31%;
-	width: 800px;
+	/*width: 800px;*/
 }
 
 .home-slider div.soliloquy-container .soliloquy-caption.soliloquy-caption-left {
@@ -2819,6 +2845,7 @@ button.menu-toggle {
 .home-slider div.soliloquy-container .soliloquy-caption-inside h4,
 .home-slider div.soliloquy-container .soliloquy-caption-inside h5{
 	color: #fff;
+		font-family: 'Kalam', sans-serif;
 	font-size: 20px;
 	font-size: 2rem;
 	font-weight: 700;
@@ -2850,7 +2877,13 @@ button.menu-toggle {
 	font-size: 25px;
 	font-size: 2.5rem;
 }
-
+.front-page-hero h1 {
+	font-family: 'Kalam', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	text-transform: sentence;
+	vertical-align: middle;
+}
 /* # Attorneys
 ---------------------------------------------------------------------------------------------------- */
 

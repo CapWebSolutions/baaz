@@ -42,6 +42,8 @@ add_filter( 'http_request_args', 'be_core_functionality_hidden', 5, 2 );
 // Use shortcodes in widgets
 add_filter( 'widget_text', 'do_shortcode' );
 
+
+
 // Add Genesis theme support for WooCommerce
 add_theme_support( 'genesis-connect-woocommerce' );
 

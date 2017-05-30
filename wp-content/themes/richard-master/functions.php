@@ -13,13 +13,42 @@ function richard_i18n() {
     load_child_theme_textdomain( 'richard', get_stylesheet_directory() . '/languages' );
 }
 
-add_action( 'wp_enqueue_scripts', 'richard_enqueue_assets' );
+add_action( 'wp_enqueue_scripts', 'baaz_enqueue_assets' );
 /**
  * Enqueue theme assets.
  */
-function richard_enqueue_assets() {
+function baaz_enqueue_assets() {
 	wp_enqueue_style( 'richard', get_stylesheet_uri() );
 	wp_style_add_data( 'richard', 'rtl', 'replace' );
+}
+
+/** Remove jQuery and jQuery-ui scripts loading from header */
+// add_action('wp_enqueue_scripts', 'crunchify_script_remove_header');
+function crunchify_script_remove_header() {
+      wp_deregister_script( 'jquery' );
+      wp_deregister_script( 'jquery-ui' );
+}
+ 
+/** Load jQuery and jQuery-ui script just before closing Body tag */
+// add_action('genesis_after_footer', 'crunchify_script_add_body');
+function crunchify_script_add_body() {
+      wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', false, null);
+      wp_enqueue_script( 'jquery');
+      
+      wp_register_script( 'jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', false, null);
+      wp_enqueue_script( 'jquery-ui');
+}
+
+// Enable PHP in widgets
+add_filter('widget_text','execute_php',100);
+function execute_php($html){
+     if(strpos($html,"<"."?php")!==false){
+          ob_start();
+          eval("?".">".$html);
+          $html=ob_get_contents();
+          ob_end_clean();
+     }
+     return $html;
 }
 
 // Start the engine
@@ -31,17 +60,6 @@ richard_init();
 
 // Editor Styles
 add_editor_style( 'editor-style.css' );
-
-/** Create additional color style options */
-// add_theme_support( 'genesis-style-selector',
-// 	array(
-// 		'richard-option1' => 'Red',
-// 		'richard-option2' => 'Green',
-// 		'richard-option3' => 'Orange',
-// 		'richard-option4' => 'Dark Blue',
-// 		'richard-option5' => 'Rose',
-// 	)
-// );
 
 // Force Stupid IE to NOT use compatibility mode
 add_filter( 'wp_headers', 'richard_keep_ie_modern' );
@@ -125,10 +143,10 @@ function sp_post_info_filter( $post_info ) {
 	$feature_image = get_post_meta($post->ID, '_richard_post_image_url', true);
 
 	if ( $feature_image ) {
-		$post_info = '[post_date before="" format="M <b>d</b>"] [post_comments before=" " ]';
+		$post_info = '[post_date before="" format="M <b>d</b>"]';
 	}
 	else {
-		$post_info = '[post_date before="" format="M d, Y"] [post_comments before=" " ]';
+		$post_info = '[post_date before="" format="M d, Y"]';
 	}
 
 	return $post_info;

@@ -185,6 +185,7 @@ function richard_load_fonts() {
 	wp_enqueue_style( 'genericons' );
 	wp_enqueue_style( 'richard-fonts', richard_google_fonts_url(), array(), null );
 	wp_enqueue_style( 'material-icons', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), null );
+	wp_enqueue_style( 'kalam', 'https://fonts.googleapis.com/css?family=Kalam:400', array(), null );
 }
 
 add_filter( 'http_request_args', 'richard_dont_update_theme', 5, 2 );
