@@ -84,11 +84,11 @@ class WSM_CTA_Widget extends WP_Widget {
 
 					//$title1 = wp_kses_post($instance['wsm-title']);
 
-						echo '<span class="cta-title">';
+						echo '<div class="cta-title">';
 							//echo $title1 ;
 							if ( ! empty( $instance['title'] ) )
 			echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title;
-						echo '</span>';
+						echo '</div>';
 
 				echo'</a>';
 

@@ -911,7 +911,7 @@ img.alignright,
 --------------------------------------------- */
 
 .featured-content .entry {
-	border-bottom: 1px solid #ebeced;
+	/*border-bottom: 1px solid #ebeced;*/
 	margin-bottom: 16px;
 	padding: 0 0 16px;
 }
@@ -1304,6 +1304,7 @@ Social Icons
 .home .content .cta-wrap .cta-box a,
 .home footer.site-footer .cta-wrap .cta-box a {
 	background-color: #f4f5f5;
+	/*background-color: orange;*/
 	display: block;
 	padding: 24px 10px;
 }
@@ -1311,6 +1312,7 @@ Social Icons
 .home .content .cta-wrap .cta-box a:hover,
 .home footer.site-footer .cta-wrap .cta-box a:hover {
 	background-color: #e1e1e1;
+	/*background-color: darkorange;*/
 }
 
 .home .content .cta-wrap > div:first-child,
@@ -2780,7 +2782,8 @@ button.menu-toggle {
 ---------------------------------------------------------------------------------------------------- */
 
 .home .content .widget-wrap,
-.home footer.site-footer .widget-wrap  {
+.home footer.site-footer .widget-wrap,
+.pre-footer-ctas .wsm-cta-widget .home .content .widget-wrap {
 	margin: 0 auto;
 	max-width: 1100px;
 	padding: 40px 0;
@@ -2797,6 +2800,7 @@ button.menu-toggle {
 	font-size: 28px;
 	font-size: 2.8rem;
 	margin-bottom: 20px;
+	/*padding: 40px 0;*/
 	text-align: center;
 }
 
@@ -4018,6 +4022,12 @@ footer.site-footer .pre-footer-ctas {
 .site-footer {
 	color: #696a6d;
 }
+.pre-footer-ctas .cta-wrap .cta-box a,
+.pre-footer-ctas footer.site-footer .cta-wrap .cta-box a {
+	background-color: orange;
+}
+
+.home .content .cta-wrap .cta-box a, .home footer.site-footer .cta-wrap .cta-box a
 
 .site-footer p {
 	margin-bottom: 0;
@@ -4468,7 +4478,8 @@ body.richard-option2.single-tribe_events .tribe-events-content ol li::before,
 .richard-option2 .sidebar .cta-wrap .cta-title,
 .richard-option2 a:hover,
 .richard-option2 .entry-title a,
-.richard-option2 .sidebar .widget-title a {
+.richard-option2 .sidebar .widget-title a,
+.richard-option2 .site-footer .pre-footer-ctas {
 	color: #414042;  /* Black */
 }
 
@@ -5348,7 +5359,9 @@ body.richard-option5.single-tribe_events .tribe-events-content ul > li:before,
 	margin: 2% auto;
 }
 
-
+section#wsm-sidebar-cta-widget-9.widget.wsm-cta-widget {
+	/*background-color: purple;*/
+}
 
 
 
