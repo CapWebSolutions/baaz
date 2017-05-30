@@ -142,7 +142,7 @@ textarea:focus,
 }
 
 a {
-	color: #0094ae;
+	color: #0579B2;
 	text-decoration: none;
 }
 
@@ -377,7 +377,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	background-color: #0094ae;
+	/*background-color: #0579B2;*/
+	background-color: #0579B2;
 	border: 0;
 	border-radius: 12px;
 	color: #fff;
@@ -784,7 +785,7 @@ th {
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .widget-title {
@@ -1233,7 +1234,8 @@ Social Icons
 
 .cta-box .material-icons,
 .cta-box .genericon {
-	color: #0094ae;
+	/*color: #0579B2;*/
+	color: #0579B2;
 	font-size: 55px;
 }
 
@@ -1541,7 +1543,7 @@ Social Icons
 
 .wsm-featured-widget .featured-content .more-link a {
 	background-image: none !important;
-	background-color: #0094ae;
+	background-color: #0579B2;
 	border-radius: 16px;
 	color: #fff;
 	display: inline-block;
@@ -1814,7 +1816,7 @@ div.gform_wrapper li.gfield.gfield_error.gfield_contains_required,
 }
 
 .sidebar .widget.gform_widget .widget-wrap {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	padding: 20px 30px;
 }
 
@@ -2017,7 +2019,7 @@ div.tribe-events-schedule h2 {
 }
 
 div#tribe-events-content .tribe-events-tooltip h4 {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 div.tribe-events-list .type-tribe_events h2 {
@@ -2032,7 +2034,7 @@ div.tribe-events-list .type-tribe_events h2 a {
 }
 
 div.tribe-events-list .type-tribe_events h2 a:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 div.tribe-events-event-meta address.tribe-events-address,
@@ -2048,7 +2050,7 @@ div.tribe-events-list .tribe-events-event-image {
 }
 
 div.tribe-events-loop .tribe-events-read-more {
-	background-color: #0094AE;
+	background-color: #0579B2;
 	border-radius: 12px;
 	color: #fff;
 	display: inline-block;
@@ -2142,7 +2144,7 @@ div#tribe-events-content.tribe-events-month .tribe-events-month-event-title a.ur
 }
 
 div#tribe-events-content.tribe-events-month .tribe-events-month-event-title a.url:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 div.event-is-recurring .tribe-events-divider,
@@ -2452,7 +2454,7 @@ div.jw-display-icon-container .jw-icon-display {
 .site-title a,
 .site-title a:hover,
 .site-title a:focus {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .site-title a {
@@ -2535,7 +2537,7 @@ div.jw-display-icon-container .jw-icon-display {
 .genesis-nav-menu a:hover,
 .genesis-nav-menu a:focus,
 .genesis-nav-menu .current-menu-item > a  {
-	color: #0094ae;
+	color: #0579B2;
 	text-decoration: none;
 }
 
@@ -2559,7 +2561,7 @@ div.jw-display-icon-container .jw-icon-display {
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	border-bottom: 1px solid #01a2bf;
 	font-size: 18px;
 	font-size: 1.8rem;
@@ -2686,7 +2688,7 @@ div.jw-display-icon-container .jw-icon-display {
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu a:focus,
 .nav-primary .genesis-nav-menu .current-menu-item > a {
-	color: #0094ae;
+	color: #0579B2;
 	text-decoration: none;
 }
 
@@ -2718,13 +2720,13 @@ div.jw-display-icon-container .jw-icon-display {
 }
 
 .nav-secondary .genesis-nav-menu li.phone a {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .nav-secondary .genesis-nav-menu a:hover,
 .nav-secondary .genesis-nav-menu a:focus,
 .nav-secondary .genesis-nav-menu .current-menu-item > a {
-	color: #0094ae;
+	color: #0579B2;
 	text-decoration: none;
 }
 
@@ -2733,7 +2735,7 @@ div.jw-display-icon-container .jw-icon-display {
 }
 
 .nav-secondary .genesis-nav-menu .phone {
-	color: #0094ae;
+	color: #0579B2;
 	font-size: 40px;
 	font-size: 4.0rem;
 	font-weight:  400;
@@ -2753,7 +2755,7 @@ div.jw-display-icon-container .jw-icon-display {
 }
 
 .nav-secondary .menu-item .material-icons {
-	color: #0094ae;
+	color: #0579B2;
 	font-size: 14px;
 	margin-right: 2px;
 	vertical-align: middle;
@@ -2796,6 +2798,14 @@ button.menu-toggle {
 	font-size: 2.8rem;
 	margin-bottom: 20px;
 	text-align: center;
+}
+
+#text-5 {
+	background-color: lightgrey;
+}
+#text-6 {
+	/*background-color: #ccffdd;*/
+	background-color: #EAF8FE;
 }
 
 /* ## Slider
@@ -2938,7 +2948,7 @@ button.menu-toggle {
 }
 
 .attorneys-container .attorney-name a:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .attorneys-container .job_title {
@@ -2955,7 +2965,7 @@ button.menu-toggle {
 }
 
 .attorney-header .more-link a {
-	background: url(images/arrow-morelink-button.png) no-repeat right center #0094ae;
+	background: url(images/arrow-morelink-button.png) no-repeat right center #0579B2;
 	border-radius: 4px;
 	color: #fff;
 	font-size: 18px;
@@ -3076,7 +3086,7 @@ button.menu-toggle {
 
 .entry-content .practice-area-indutry li a:hover,
 .practice-area-indutry li a:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .attorney-content .awards-logo {
@@ -3194,7 +3204,7 @@ button.menu-toggle {
 }
 
 .pa-container .cta-bar {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	padding: 40px 30px;
 }
 
@@ -3313,7 +3323,7 @@ button.menu-toggle {
 .page-template-page_video-test .wsm-featured-testimonial .author-name,
 .single-wsm_practice-area .wsm-featured-testimonial .author-company,
 .single-wsm_practice-area .wsm-featured-testimonial .author-name {
-	color: #0094ae;
+	color: #0579B2;
 	display: block;
 	font-size: 22px;
 	font-size: 2.2rem;
@@ -3506,7 +3516,7 @@ p.entry-meta {
 .entry-footer .ssba-wrap h3,
 .entry-footer .ssba-wrap h4,
 .entry-footer .ssba-wrap h5 {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	color: #fff;
 	display: inline-block;
 	font-size: 11px;
@@ -3519,7 +3529,7 @@ p.entry-meta {
 
 .entry-header .entry-meta a:hover,
 .entry-footer .entry-meta a:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .entry-categories,
@@ -3549,7 +3559,7 @@ p.entry-meta {
 }
 
 .has-featured-image .content .entry-header .entry-time {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	color: #fff;
 	display: inline-block;
 	float: left;
@@ -3592,7 +3602,7 @@ p.entry-meta {
 
 .wsmfeaturedpost .entry-header .entry-date,
 .has-post-thumbnail .entry-header .entry-date {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	bottom: 1px;
 	color: #fff;
 	display: inline-block;
@@ -3645,7 +3655,7 @@ p.entry-meta {
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	color: #fff;
 }
 
@@ -3739,7 +3749,7 @@ ul li.comment {
 
 .entry-comments .comment-author a:hover,
 .entry-comments .comment-meta a:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .entry-comments .comment-meta,
@@ -3771,11 +3781,11 @@ ul li.comment {
 }
 
 .logged-in-as a:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .comment-reply a {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	border-radius: 8px;
 	color: #fff;
 	display: inline-block;
@@ -3845,7 +3855,7 @@ ul li.comment {
 .sidebar .widget_recent_comments a,
 .sidebar .tagcloud a:hover,
 .sidebar li a:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .sidebar p:last-child,
@@ -3869,7 +3879,7 @@ ul li.comment {
 }
 
 .sidebar .more-link a {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	background-image: none !important;
 	border-radius: 12px;
 	color: #fff;
@@ -3971,7 +3981,7 @@ ul li.comment {
 }
 
 .footer-widgets .more-link a {
-	background-color: #0094ae;
+	background-color: #0579B2;
 	border-radius: 16px;
 	color: #fff;
 	display: inline-block;
@@ -4033,7 +4043,7 @@ footer.site-footer .pre-footer-ctas {
 
 .site-footer a:hover,
 .copyright a:hover {
-	color: #0094ae;
+	color: #0579B2;
 }
 
 .site-footer .footer-left {
@@ -5962,7 +5972,7 @@ readyclass.min.css?ver=2.2.2:1
 
 	.menu-toggle {
 		background-color: transparent;
-		color: #0094AE;
+		color: #0579B2;
 	}
 
 	.menu-toggle:hover {
@@ -5984,19 +5994,19 @@ readyclass.min.css?ver=2.2.2:1
 	.menu-toggle:before {
 		background: none transparent !important;
 		content: "\2630";
-		color: #0094AE;
+		color: #0579B2;
 	}
 
 	.menu-toggle:hover:before {
 		background: none transparent;
 		content: "\f406";
-		color: #0094AE;
+		color: #0579B2;
 	}
 
 	.menu-toggle.activated:before {
 		background: none transparent;
 		content: "\f406";
-		color: #0094AE;
+		color: #0579B2;
 	}
 
 	.sub-menu-toggle:before {
@@ -6026,7 +6036,7 @@ readyclass.min.css?ver=2.2.2:1
 	}
 
 	.nav-primary .genesis-nav-menu .menu-item a {
-		background-color: #0094AE;
+		background-color: #0579B2;
 		border: 0;
 		border-bottom: 1px solid #01a2bf;
 		color: #fff;
