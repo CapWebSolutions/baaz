@@ -2466,7 +2466,8 @@ div.jw-display-icon-container .jw-icon-display {
 }
 
 .header-image .site-title > a {
-	background: url(images/logo.png) no-repeat left top;
+	/*background: url(images/logo.png) no-repeat left top;*/
+	background: url(images/logo-v2.jpg) no-repeat left top;
 	border: 0;
 	float: left;
 	margin: 5px 0;
