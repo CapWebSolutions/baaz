@@ -1322,7 +1322,7 @@ Social Icons
 
 .home .content .cta-wrap .cta-title,
 .home footer.site-footer .cta-wrap .cta-title {
-	color: #005060;
+	color: #0579B2;
 	display: block;
 	font-size: 24px;
 	font-size: 2.4rem;
@@ -1330,7 +1330,7 @@ Social Icons
 }
 
 .home .content .cta-wrap .cta-title {
-	color: #005060;
+	color: #0579B2;
 }
 
 .sidebar .cta-wrap .cta-box {
@@ -4023,12 +4023,35 @@ footer.site-footer .pre-footer-ctas {
 	color: #696a6d;
 }
 /* Interior Footer CTAs */ 
+.page-template-archive-testimonials .pre-footer-ctas .cta-wrap .cta-box a,
+.blog .pre-footer-ctas .cta-wrap .cta-box a,
+.wsm_attorney-template-default .pre-footer-ctas .cta-wrap .cta-box a,
+.page-template-archive-testimonials .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a,
+.blog .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a,
+.wsm_attorney-template-default .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a,
 .page-template-default .pre-footer-ctas .cta-wrap .cta-box a,
 .page-template-default .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a {
-	color: #D3D3D3;
+	color: #0579B2; 
+    display: block;
+    padding: 24px 10px;
 	background-color: #D3D3D3;
-	padding: 0 20px;
+	width: 146px;
 }
+.page-template-archive-testimonials .pre-footer-ctas .cta-wrap .cta-box a:hover,
+.blog .pre-footer-ctas .cta-wrap .cta-box a:hover,
+.wsm_attorney-template-default .pre-footer-ctas .cta-wrap .cta-box a:hover,
+.page-template-archive-testimonials .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a:hover,
+.blog .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a:hover,
+.wsm_attorney-template-default .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a:hover,
+.page-template-default .pre-footer-ctas .cta-wrap .cta-box a:hover,
+.page-template-default .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a:hover {
+background-color: #f4f5f5;
+}
+
+/*.home .content .cta-wrap .cta-box a, .home footer.site-footer .cta-wrap .cta-box a {
+    background-color: #f4f5f5;
+    display: block;
+    padding: 24px 10px;*/
 
 .site-footer p {
 	margin-bottom: 0;
