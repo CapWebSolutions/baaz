@@ -4022,12 +4022,14 @@ footer.site-footer .pre-footer-ctas {
 .site-footer {
 	color: #696a6d;
 }
-.pre-footer-ctas .cta-wrap .cta-box a,
-.pre-footer-ctas footer.site-footer .cta-wrap .cta-box a {
-	background-color: orange;
+/* Interior Footer CTAs */ 
+.page-template-default .pre-footer-ctas .cta-wrap .cta-box a,
+.page-template-default .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a {
+	color: #D3D3D3;
+	background-color: #D3D3D3;
+	/*border-right: 1px solid #d3d3d3;*/
+	padding: 0 20px;
 }
-
-.home .content .cta-wrap .cta-box a, .home footer.site-footer .cta-wrap .cta-box a
 
 .site-footer p {
 	margin-bottom: 0;
