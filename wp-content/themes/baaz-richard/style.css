@@ -2850,7 +2850,7 @@ button.menu-toggle {
 }
 
 .home-slider div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
-	background: rgba(0,0,0,0.4);
+	/*background: rgba(0,0,0,0.4);*/
 	color: #fff;
 	font-size: 20px;
 	font-size: 2rem;
@@ -2903,6 +2903,9 @@ button.menu-toggle {
 	margin: 0;
 	text-transform: sentence;
 	vertical-align: middle;
+}
+.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+	background: rgba(0, 0, 0, 0.0) !important;
 }
 /* # Attorneys
 ---------------------------------------------------------------------------------------------------- */
