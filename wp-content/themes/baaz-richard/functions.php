@@ -171,7 +171,7 @@ add_filter( 'excerpt_more', 'richard_add_excerpt_more' );
 add_filter( 'get_the_content_more_link', 'richard_add_excerpt_more' );
 add_filter( 'the_content_more_link', 'richard_add_excerpt_more' );
 function richard_add_excerpt_more( $more ) {
-    return '<span class="more-link"><a href="' . get_permalink() . '" rel="nofollow">' . __( 'Read More', 'richard' ) . '</a></span>';
+    return '<span class="more-link"><a href="' . get_permalink() . '" rel="nofollow">' . __( '. . . ', 'richard' ) . '</a></span>';
 }
 
 /*
