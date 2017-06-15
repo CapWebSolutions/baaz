@@ -1042,38 +1042,6 @@ a.faq-tease:hover {
 }
 
 /* 
-Testimonials
---------------------------------------------- */
-.testimonial-container {
-	font-style: italic;
-}
-p.quote-meta {
-	text-align: right;
-	line-height: .8;
-}
-.testimonial .entry {
-	font-style: italic;
-}
-
-#testimonials .client-contact-info {
-    margin: 0 0 25px 0; 
-    float: right;
-    font-weight: lighter;
-    font-size: 18px; 
-    }
-#testimonials .testimonial-quote {
-    text-align: center;
-    padding: 3px 0 0 65px; 
-    line-height: 1.5em; 
-    font-size: 20px; 
-    font-style: italic; 
-    margin: 10px 0 0 0;
-    }
-#testimonials p {
-    margin: 0 0 0 20px;
-}
-
-/* 
 Footer Call Now Box
 --------------------------------------------- */
 
@@ -1330,7 +1298,6 @@ Social Icons
 .home .content .cta-wrap .cta-box a,
 .home footer.site-footer .cta-wrap .cta-box a {
 	background-color: #f4f5f5;
-	/*background-color: orange;*/
 	display: block;
 	padding: 24px 10px;
 }
@@ -1338,7 +1305,6 @@ Social Icons
 .home .content .cta-wrap .cta-box a:hover,
 .home footer.site-footer .cta-wrap .cta-box a:hover {
 	background-color: #e1e1e1;
-	/*background-color: darkorange;*/
 }
 
 .home .content .cta-wrap > div:first-child,
@@ -4076,6 +4042,10 @@ footer.site-footer .pre-footer-ctas {
 	color: #696a6d;
 }
 /* Interior Footer CTAs */ 
+.testimonial-template-default .pre-footer-ctas .cta-wrap .cta-box a,
+.testimonial-template-default footer.site-footer .cta-wrap .cta-box a,
+.page-template-page_testimonial .pre-footer-ctas .cta-wrap .cta-box a,
+.page-template-page_testimonial footer.site-footer .cta-wrap .cta-box a,
 .post-template-default .pre-footer-ctas .cta-wrap .cta-box a,
 .post-template-default footer.site-footer .cta-wrap .cta-box a,
 .page-template-archive-testimonials .pre-footer-ctas .cta-wrap .cta-box a,
@@ -4102,7 +4072,7 @@ footer.site-footer .pre-footer-ctas {
 .wsm_attorney-template-default .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a:hover,
 .page-template-default .pre-footer-ctas .cta-wrap .cta-box a:hover,
 .page-template-default .pre-footer-ctas footer.site-footer .cta-wrap .cta-box a:hover {
-background-color: #f4f5f5;
+	background-color: #f4f5f5;
 }
 
 /*.home .content .cta-wrap .cta-box a, .home footer.site-footer .cta-wrap .cta-box a {
@@ -4622,7 +4592,40 @@ section#wsm-sidebar-cta-widget-9.widget.wsm-cta-widget {
 	/*background-color: purple;*/
 }
 
+/* # Interior page testimonials
+---------------------------------------------------------------------------------------------------- */
 
+.testimonial-quote-internal p {
+	text-align: center;
+    padding: 3px 0 0 0;   
+    line-height: 1.5em; 
+    font-size: 24px; 
+    font-style: italic; 
+    margin: 10px 0 0 0;
+}
+.testimonial-quote-internal p:before {
+	content: "\201C";
+	color: #0579B2;
+	font-size: 30px;
+}
+.testimonial-quote-internal p:after {
+	content: "\201D";
+	color: #0579B2;
+	font-size: 30px; 
+}
+
+div.client-contact-info-wrap > span.client-contact-info-internal  {
+	margin: 0 0 25px 0; 
+    float: right;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px; 
+}    
+div.client-contact-info-wrap > span.client-contact-info-internal:before {
+	content: "-";
+}
+
+     
 
 
 /* # Media Queries

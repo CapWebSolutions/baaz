@@ -37,7 +37,10 @@ if ( file_exists( __DIR__ . '/lib/cmb2/init.php' ) ) {
 // include_once( CWS_DIR . '/lib/functions/metaboxes.php' );
 
 // General.
-// include_once( CWS_DIR . '/lib/functions/general.php' );
+include_once( CWS_DIR . '/lib/functions/general.php' );
+
+// Testimonials
+// include_once( CWS_DIR . '/lib/functions/display_testimonials.php' );
 
 // Footer Setup.
 // include_once( CWS_DIR . '/lib/functions/core-footer.php' );
@@ -45,3 +48,10 @@ if ( file_exists( __DIR__ . '/lib/cmb2/init.php' ) ) {
 // Woo tweaks.
 // include_once( CWS_DIR . '/lib/functions/wootweaks.php' );
 
+// Enqueue Assets
+add_action('wp_enqueue_scripts', 'core_functionality_add_css_and_js');
+function core_functionality_add_css_and_js() {
+	// wp_enqueue_style( 'core-functionality-styles', CWS_DIR . '/assets/css/testimonials.css');
+	wp_enqueue_script( 'core-functionality-scripts', CWS_DIR . '/assets/js/retina.min.js', array(), '1.0.0', true);
+	// wp_enqueue_script( 'core-functionality-scripts', CWS_DIR . '/assets/js/slide-testimonials.js', array(), '1.0.0', true);
+}

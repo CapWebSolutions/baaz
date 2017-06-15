@@ -27,7 +27,9 @@ function custom_do_grid_loop() {
 		while( $loop->have_posts() ): $loop->the_post(); global $post;
 ?>
             <div id="testimonials">
-            <blockquote><?php the_content($id); ?></blockquote>
+            <!-- <blockquote> -->
+			<?php the_content($id); ?>
+			<!-- </blockquote> -->
             <div class="client-contact-info"><?php the_title($id); ?></div>
             <div class="clearfix"></div>
             </div>

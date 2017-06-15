@@ -15,22 +15,21 @@
 
 add_action( 'init', 'cptui_register_my_cpts' );
 function cptui_register_my_cpts() {
-
-	/**
+ 	/**
 	 * Post Type: Testimonials.
 	 */
 
 	$labels = array(
 		"name" => __( 'Testimonials', 'baaz-testimonials' ),
 		"singular_name" => __( 'Testimonial', 'baaz-testimonials' ),
-		'add_new' => __( 'Add New Testimonial', 'baaz-testimonials' ),
-		'add_new_item' => __( 'Add New Testimonial', 'baaz-testimonials' ),
-		'edit_item' => __( 'Edit Testimonial', 'baaz-testimonials' ),
-		'new_item' => __( 'New Testimonial', 'baaz-testimonials' ),
-		'view_item' => __( 'View Testimonial', 'baaz-testimonials' ),
-		'search_items' => __( 'Search Testimonials', 'baaz-testimonials' ),
-		'not_found' =>  __( 'No Testimonials found', 'baaz-testimonials' ),
-		'not_found_in_trash' => __( 'No Testimonials found in trash', 'baaz-testimonials' ),
+		'add_new' => __( 'Add new testimonial', 'baaz-testimonials' ),
+		'add_new_item' => __( 'Add new testimonial', 'baaz-testimonials' ),
+		'edit_item' => __( 'Edit testimonial', 'baaz-testimonials' ),
+		'new_item' => __( 'New testimonial', 'baaz-testimonials' ),
+		'view_item' => __( 'View testimonial', 'baaz-testimonials' ),
+		'search_items' => __( 'Search testimonials', 'baaz-testimonials' ),
+		'not_found' =>  __( 'No testimonials found', 'baaz-testimonials' ),
+		'not_found_in_trash' => __( 'No testimonials found in trash', 'baaz-testimonials' ),
 		'parent_item_colon' => '',
 		'menu_name' => __( 'Testimonials', 'baaz-testimonials' ),
 	);
@@ -57,8 +56,7 @@ function cptui_register_my_cpts() {
 		"query_var" => true,
 		"menu_position" => 20,
 		"menu_icon" => "dashicons-megaphone",
-   		"supports" => array( 'title', 'editor', 'page-attributes','genesis-cpt-archives-settings' ),
-
+   		"supports" => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'page-attributes','genesis-cpt-archives-settings' ),
 	);
 
 	register_post_type( "cws_testimonials", $args );

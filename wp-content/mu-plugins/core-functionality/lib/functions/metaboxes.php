@@ -76,34 +76,32 @@ function cws_register_testimonial_metabox() {
 	/**
 	 * Featured Testimonial
 	 */
-	$cmb_featured_quote = new_cmb2_box( array(
-		'id'           => $prefix . 'quote_metabox',
-		'title'        => __( 'Client Details', 'baaz-testimonials' ),
+	$cmb_featured_testimonial = new_cmb2_box( array(
+		'id'           => $prefix . 'testimonial_metabox',
+		'title'        => __( 'Testimonial Details', 'baaz-testimonials' ),
 		'object_types' => array( 'cws_testimonials', ), // Post type
 		'context'      => 'normal',
 		'priority'     => 'high',
 		'show_names'   => true,
 	) ); 
 	
-	// $cmb_featured_quote->add_field( array(
-	// 	'id'   => $prefix . 'quote_comments',
-	// 	'name'    => esc_html__( 'Quote/Comments', 'baaz-testimonials' ),
-	// 	'desc'    => esc_html__( 'Comments made by testimonial author', 'baaz-testimonials' ),
-	// 	'type'    => 'wysiwyg',
-	// 	'options' => array(
-	// 		'textarea_rows' => 5,
-	// 	),
+	// $cmb_featured_testimonial->add_field( array(
+	// 	'name' => __( 'Name', 'baaz-testimonials' ),
+	// 	'id'   => $prefix . 'quote_name',
+	// 	'type' => 'text',
+	// 	'description' => "Enter name of person providing testimonial."
 	// ) );
-
-	$cmb_featured_quote->add_field( array(
-		'name' => __( 'Name', 'baaz-testimonials' ),
-		'id'   => $prefix . 'quote_name',
-		'type' => 'text',
+	$cmb_featured_testimonial->add_field( array(
+		'name' => __( 'Comments', 'baaz-testimonials' ),
+		'id'   => $prefix . 'quote_comments',
+		'type' => 'wysiwyg',
+		'description' => "Enter contents of the testimonial."
 	) );
-	$cmb_featured_quote->add_field( array(
-		'name' => __( 'Location', 'baaz-testimonials' ),
+	$cmb_featured_testimonial->add_field( array(
+		'name' => __( 'Client Location', 'baaz-testimonials' ),
 		'id'   => $prefix . 'quote_location',
 		'type' => 'text',
+		'description' => "Enter City, State."
 	) );
 }
 

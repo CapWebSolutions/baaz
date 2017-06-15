@@ -101,7 +101,7 @@ function wsm_entry_publisher() {
 	$publisher = 'https://schema.org/Organization';
 	//$publisher = 'https://schema.org/Person';
 
-	$publisher_name = 'Web Savvy Marketing';
+	$publisher_name = 'Bicycle Accident AZ';
 	$logo = get_stylesheet_directory_uri(). '/images/logo.png';
 	$logo_width = 148; // Replace this with your logo width
 	$logo_height = 64; // Replace this with your logo height
