@@ -33,6 +33,10 @@ function richard_init() {
 	if ( ! defined( 'CHILD_DIR' ) )
 		define( 'CHILD_DIR', get_stylesheet_directory() );
 
+	/** Define Directory Location Constants */
+	if ( ! defined( 'CHILD_LIB' ) )
+		define( 'CHILD_LIB', get_stylesheet_directory() . '/lib' );
+
 	/** Define URL Location Constants */
 	if ( ! defined( 'CHILD_URL' ) )
 	define( 'CHILD_URL', get_stylesheet_directory_uri() );
@@ -97,13 +101,13 @@ function richard_init() {
 	include_once( CHILD_DIR . '/lib/functions/shortcodes.php');
 
 	// Setup Widgets
-	include_once( CHILD_DIR . '/lib/widgets/call-to-action-bar.php');
+	// include_once( CHILD_DIR . '/lib/widgets/call-to-action-bar.php');
 	include_once( CHILD_DIR . '/lib/widgets/call-to-action.php');
 	include_once( CHILD_DIR . '/lib/widgets/title.php');
-	include_once( CHILD_DIR . '/lib/widgets/widget-social.php');
+	// include_once( CHILD_DIR . '/lib/widgets/widget-social.php');
 	include_once( CHILD_DIR . '/lib/widgets/wsm-featured-page.php');
 	include_once( CHILD_DIR . '/lib/widgets/wsm-featured-post.php');
-	include_once( CHILD_DIR . '/lib/widgets/wsm-featured-video.php');
+	// include_once( CHILD_DIR . '/lib/widgets/wsm-featured-video.php');
 	include_once( CHILD_DIR . '/lib/widgets/wsm-featured-widget.php');
 
 	//include extras

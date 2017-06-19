@@ -212,7 +212,8 @@ function be_phone_info( $menu, $args ) {
 	if ( 'secondary' !== $args['theme_location'] || empty( $phone ) ) {
 		return $menu;
 	}
-	$menu_right  .= '<li class="phone menu-item last"><a href="tel:' . strip_tags( $phone ) . '">' . '<i class="material-icons">phone_in_talk</i>' . strip_tags( $phone ) . '</a></li>';
+
+	$menu_right  = '<li class="phone menu-item last"><a href="tel:' . strip_tags( $phone ) . '">' . '<i class="material-icons">phone_in_talk</i>' . strip_tags( $phone ) . '</a></li>';
 	return $menu . $menu_right;
 
 }

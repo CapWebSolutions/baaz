@@ -4625,7 +4625,10 @@ div.client-contact-info-wrap > span.client-contact-info-internal:before {
 	content: "-";
 }
 
-     
+/* Fix the front page caption */
+#text-12 > div > div > div > div {
+	text-align: center;
+}
 
 
 /* # Media Queries

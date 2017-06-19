@@ -63,18 +63,6 @@ function wsm_register_required_plugins() {
 			'force_deactivation' 	=> false,
 			'external_url'       => '',
 		),
-
-		// Testimonials
-		array(
-			'name'     				=> 'Richard Practice Areas',
-			'slug'     				=> 'richard-practice-areas',
-			'source'   				=> RICHARD_DIR . '/lib/plugins/richard-practice-areas.zip',
-			'required' 				=> true,
-			'force_activation' 		=> false,
-			'force_deactivation' 	=> false,
-			'external_url'       => '',
-		),
-
 	);
 
 	// Change this to your theme text domain, used for internationalising strings
