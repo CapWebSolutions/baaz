@@ -1930,6 +1930,16 @@ div.gform_wrapper li.gfield.gfield_error.gfield_contains_required,
 .two-thirds > .gform_wrapper .top_label li.gfield.gf_inline {
 	vertical-align: text-bottom;
 }
+.gf_and_or {
+	text-align: center;
+	width: 10%;
+	font-weight: 300;
+	line-height: 60px; 
+	font-size: smaller;
+}
+.gf_frameborder0 {
+	border: 0;
+}
 
 /* # Skip Links
 ---------------------------------------------------------------------------------------------------- */
@@ -2894,7 +2904,7 @@ button.menu-toggle {
 h1.front-page-hero {
 	font-family: 'Kalam', sans-serif;
 	font-weight: 300;
-	text-transform: sentence;
+	/*text-transform: sentence;*/
 	vertical-align: middle;
 	text-align: center;
 	color: black;
@@ -2911,8 +2921,9 @@ h1.front-page-hero {
 	position: absolute;
     top: 20%;
     left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);    
+	-webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);	
-
 }
 
 /* # Attorneys
@@ -4123,146 +4134,6 @@ footer.site-footer .pre-footer-ctas {
 	margin-left: 10px;
 }
 
-/* # Full Video Cover Image Controls
----------------------------------------------------------------------------------------------------- */
-
-.fvc-controls,
-.fvc-controls * {
-	background-color:transparent;
-	border:0;
-	color:inherit;
-	direction:ltr;
-	float:none;
-	font-family:Arial,Helvetica,sans-serif;
-	font-size:1em;
-	font-stretch:inherit;
-	font-variant:inherit;
-	line-height:1em;
-	list-style:none;
-	margin:0;
-	padding:0;
-	text-align:left;
-	text-transform:none;
-	vertical-align:baseline;
-	-webkit-tap-highlight-color:rgba(255,255,255,0);
-}
-
-.fvc-icon {
-	background-color:transparent;
-	-webkit-font-feature-settings:liga;
-	-ms-font-feature-settings:liga 1;
-	-o-font-feature-settings:liga;
-	font-feature-settings:liga;
-	font-style:normal;
-	font-variant:normal;
-	font-weight:normal;
-	text-transform:none;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-}
-
-.fvc-player * {
-	box-sizing:inherit;
-}
-
-.fvc-player:hover .fvc-icon-container {
-	background-color:#333;
-	background:#333;
-}
-
-.fvc-preview {
-	bottom:0;
-	height:100%;
-	left:0;
-	position:absolute;
-	right:0;
-	top:0;
-	width:100%;
-}
-
-.fvc-preview,
-.fvc-controls {
-	bottom: 0;
-	height: 100%;
-	left: 0;
-	pointer-events:none;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 100%;
-}
-
-.fvc-icon-container {
-	pointer-events:all;
-}
-
-.fvc-preview {
-	background:#000 no-repeat 50% 50%;
-	display:none;
-	height:100%;
-	opacity:1;
-	position:absolute;
-	visibility:visible;
-	width:100%;
-}
-
-.fvc-player .fvc-preview {
-	background-size:contain
-}
-
-.fvc-icon-container {
-	cursor:pointer;
-	display:table;
-	height:3.5em;
-	margin:-1.75em auto 0;
-	position:relative;
-	top:50%;
-	width:3.5em;
-}
-
-.fvc-icon-container .fvc-icon {
-	background-position:50% 50%;
-	background-repeat:no-repeat;
-	display:table-cell;
-	font-size:2em;
-	position:relative;
-	text-align:center;
-	vertical-align:middle!important;
-}
-
-.fvc-icon {
-	background-color:transparent;
-	font-style:normal;
-	font-weight:normal;
-	font-variant:normal;
-	-webkit-font-feature-settings:liga;
-	-ms-font-feature-settings:liga 1;
-	-o-font-feature-settings:liga;
-	font-feature-settings:liga;
-	text-transform:none;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-}
-
-.fvc-controls .fvc-icon {
-	color:#fff;
-}
-
-.fvc-controls .fvc-icon:before {
-	padding-left:0;
-}
-
-.fvc-controls .fvc-icon-container {
-	background: none transparent !important;
-	border: 0;
-	margin-top: -65px;
-	height: 131px;
-	width: 131px;
-}
-
-.fvc-icon-container .fvc-icon {
-	background: url(images/play-icon.png) no-repeat 0 0 transparent;
-}
 
 /* # Color Options
 ---------------------------------------------------------------------------------------------------- */
@@ -5664,9 +5535,9 @@ div.client-contact-info-wrap > span.client-contact-info-internal:before {
 		max-width: 100% !important;
 	}
 
-	@page {
+	/*@page { 
 		margin: 2cm 0.5cm;
-	}
+	}*/
 
 	p,
 	h2,

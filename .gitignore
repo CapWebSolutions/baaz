@@ -134,6 +134,5 @@ Thumbs.db
 # track these mu-plugins, plugins, and themes
 # add your own entries here
 !wp-content/themes/baaz-richard/
-!wp-content/plugins/baaz-attorneys
 !wp-content/plugins/richard-attorneys
 !wp-content/plugins/rotating-testimonials

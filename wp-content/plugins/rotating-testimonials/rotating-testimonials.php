@@ -125,7 +125,7 @@ add_action( 'save_post', 'wpb_save_meta_box' );
 
 
 function wpb_display_testimonials() { ?>
-<script language="javascript"> 
+<script> 
 jQuery(document).ready(function(){
     // jQuery(function($){
 	jQuery('#testimonials .slide');
@@ -195,16 +195,14 @@ $loop = new WP_Query( $args );
                     <div class="slide" style="display: none;">
                         <div class="testimonial-quote"><?php the_content(); ?></div>
                         <div class="client-contact-info"><?php echo $data[ 'person-name' ]; ?>,&nbsp;<?php echo $data[ 'location' ]; ?></div>
-                        <div class="clearfix"></div>
-                    </div>
+                        <div class="clearfix"></div></div>
                     <?php 
                 } else { ?>
                     <div class="slide">
                         <div class="testimonial-quote"><?php the_content(); ?></div>
                         <div class="client-contact-info"><?php echo $data[ 'person-name' ]; ?>,&nbsp;<?php echo $data[ 'location' ]; ?></div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <?php 
+                        <div class="clearfix"></div></div>
+                    <?php
                     $count++;
                 }
             } else {

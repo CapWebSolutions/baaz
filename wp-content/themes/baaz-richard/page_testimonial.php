@@ -19,7 +19,7 @@ function baaz_testimonials_loop() {
 	the_title( );
 	echo '</h1></header>';
 
-echo '<div class="testimonials-container">';
+    echo '<div class="testimonials-container">';
 
 	global $wp_query;
 	global $post;
@@ -48,13 +48,13 @@ echo '<div class="testimonials-container">';
             </div>
             <div class="client-contact-info-wrap">
             <span class="client-contact-info-internal">
-            <?php echo $data['person-name'] . ', '; ?>
-            <?php echo $data['location'];
-            echo '</span></div><hr>';
+            <?php echo $data['person-name'] . ', ' . $data['location'] . '</span></div><hr>';
         endwhile; 
     endif;
 
     genesis_posts_nav();
+
+echo '</div>';  // close testimonials-container
 
 //* Restore original query
 wp_reset_query();
