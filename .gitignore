@@ -78,38 +78,6 @@ Thumbs.db
 *.tar
 *.zip
 
-# ignore extraneous large/disallowed file types (ala WP Engine)
-# a CDN should be used for these
-*.hqx
-*.bin
-*.deb
-*.dmg
-*.img
-*.msi
-*.msp
-*.msm
-*.mid
-*.midi
-*.kar
-*.mp3
-*.ogg
-*.m4a
-*.ra
-*.3gpp
-*.3gp
-*.mp4
-*.mpeg
-*.mpg
-*.mov
-*.webm
-*.flv
-*.m4v
-*.mng
-*.asx
-*.asf
-*.wmv
-*.avi
-
 # -------------------------
 # BEGIN Whitelisted Files
 # -------------------------
@@ -133,6 +101,6 @@ Thumbs.db
 
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/themes/baaz-richard/
-!wp-content/plugins/richard-attorneys
-!wp-content/plugins/rotating-testimonials
+!wp-content/mu-plugins/example-mu-plugin/
+!wp-content/plugins/example-plugin/
+!wp-content/themes/example-theme/
