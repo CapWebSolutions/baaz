@@ -4507,6 +4507,12 @@ div.client-contact-info-wrap > span.client-contact-info-internal:before {
 
 @media only screen and (max-width: 1198px) {
 
+	.front-page-hero-text-wrapper {
+		font-size: 50px;
+		font-size: 5.0rem;
+		top: 30%;
+	}
+
 	.home .content .wsm-featured-widget .text-content-wrap {
 		min-height: 400px;
 	}
@@ -4614,6 +4620,12 @@ div.client-contact-info-wrap > span.client-contact-info-internal:before {
 }
 
 @media only screen and (max-width: 1028px) {
+
+	.front-page-hero-text-wrapper {
+		font-size: 40px;
+		font-size: 4.0rem;
+		top: 35%;
+	}
 
 	.nav-primary .genesis-nav-menu > .menu-item > a {
 		padding: 56px 6px;
