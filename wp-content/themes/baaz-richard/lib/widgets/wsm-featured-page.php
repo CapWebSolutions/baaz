@@ -6,8 +6,12 @@
  */
 
 
-add_action( 'widgets_init', create_function( '', "register_widget('Web_Savvy_Featured_Page');" ) );
+// add_action( 'widgets_init', create_function( '', "register_widget('Web_Savvy_Featured_Page');" ) );
 
+add_action( 'widgets_init', 'wsm_featured_page' );
+function wsm_featured_page() {
+	register_widget('Web_Savvy_Featured_Page');
+}
 
 class Web_Savvy_Featured_Page extends WP_Widget {
 

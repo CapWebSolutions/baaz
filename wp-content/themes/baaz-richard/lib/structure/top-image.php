@@ -97,11 +97,6 @@ function richard_do_top_image() {
 			echo '</div></div>';
 		}
 
-		// if ( empty( $new_image ) && empty( $attorney_default_image ) ) {
-		// 	echo '<header class="entry-header"><h1 class="entry-title attorney">';
-		// 	the_title( );
-		// 	echo '</h1></header>';
-		// }
 	}
 
 }

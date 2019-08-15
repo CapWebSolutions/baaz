@@ -132,7 +132,7 @@ function sp_body_class( $classes ) {
 }
 
 // Customize the entry meta in the entry header
-add_filter( 'genesis_post_info', 'sp_post_info_filter' );
+// add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 function sp_post_info_filter( $post_info ) {
 
 	if ( ! is_singular( 'post' ) )  {
@@ -152,9 +152,9 @@ function sp_post_info_filter( $post_info ) {
 	return $post_info;
 }
 
-// Relocate the entry meta in the entry header
+// Remove the entry meta in the entry header
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
-add_action( 'genesis_entry_header', 'genesis_post_info', 8 );
+// add_action( 'genesis_entry_header', 'genesis_post_info', 8 );
 
 // Customize the post meta function
 add_filter( 'genesis_post_meta', 'post_meta_filter' );
@@ -213,7 +213,18 @@ function be_phone_info( $menu, $args ) {
 		return $menu;
 	}
 
-	$menu_right  = '<li class="phone menu-item last"><a href="tel:' . strip_tags( $phone ) . '">' . '<i class="material-icons">phone_in_talk</i>' . strip_tags( $phone ) . '</a></li>';
+	$phone_number = $phone;
+	if ( $phone ) {
+		$phone_number = str_replace( array('A','B','C'),'2', $phone_number);
+		$phone_number = str_replace( array('D','E','F'),'3', $phone_number);
+		$phone_number = str_replace( array('G','H','I'),'4', $phone_number);
+		$phone_number = str_replace( array('J','K','L'),'5', $phone_number);
+		$phone_number = str_replace( array('M','N','O'),'6', $phone_number);
+		$phone_number = str_replace( array('P','Q','R','S'),'7', $phone_number);
+		$phone_number = str_replace( array('T','U','V'),'8', $phone_number);
+		$phone_number = str_replace( array('W','X','Y','Z'),'9', $phone_number);
+	}
+	$menu_right  = '<li class="phone menu-item last"><a href="tel:' . strip_tags( $phone_number ) . '">' . '<i class="material-icons">phone_in_talk</i>' . strip_tags( $phone ) . '</a></li>';
 	return $menu . $menu_right;
 
 }

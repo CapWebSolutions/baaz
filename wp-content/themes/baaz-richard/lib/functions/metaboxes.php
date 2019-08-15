@@ -14,16 +14,11 @@
 /**
  * Get the bootstrap! If using the plugin from wordpress.org, REMOVE THIS!
  */
-$post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
-$template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
 
-
-if ( file_exists( CHILD_DIR . '/lib/metabox/init.php' ) ) {
-	require_once CHILD_DIR . '/lib/metabox/init.php';
-} elseif ( file_exists( dirname( __FILE__ ) . '/cmb2/init.php' ) ) {
-	require_once dirname( __FILE__ ) . '/cmb2/init.php';
-} elseif ( file_exists( dirname( __FILE__ ) . '/CMB2/init.php' ) ) {
-	require_once dirname( __FILE__ ) . '/CMB2/init.php';
+if ( file_exists( dirname( __FILE__ ) . '/metabox/init.php' ) ) {
+	require_once dirname( __FILE__ ) . '/metabox/init.php';
+} elseif ( file_exists( dirname( __FILE__ ) . '/metabox/init.php' ) ) {
+	require_once dirname( __FILE__ ) . '/metabox/init.php';
 }
 
 
@@ -95,9 +90,9 @@ function richard_register_practice_area_metabox() {
 
 // Register Top Image metabox
 
-if ( $template_file != 'page_home.php' ) {
+// if ( $template_file != 'page_home.php' ) {
 	add_action( 'cmb2_init', 'richard_top_image_metabox' );
-}
+// }
 
 function richard_top_image_metabox() {
 

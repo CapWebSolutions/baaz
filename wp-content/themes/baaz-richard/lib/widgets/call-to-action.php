@@ -6,8 +6,10 @@
  */
 
 
-add_action( 'widgets_init', create_function( '', "register_widget('WSM_CTA_Widget');" ) );
-
+add_action( 'widgets_init', 'wsm_load_cta_widget' );
+function wsm_load_cta_widget() {
+	register_widget('WSM_CTA_Widget');
+}
 
 class WSM_CTA_Widget extends WP_Widget {
 

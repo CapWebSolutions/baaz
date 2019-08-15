@@ -39,8 +39,6 @@ function baaz_testimonials_loop() {
 
         while ( $wp_query -> have_posts() ) :
             $wp_query -> the_post();
-            // $post_id = get_the_ID( $post->ID );
-
             $data = get_post_meta( $wp_query->post->ID, 'testimonial', true );
             ?>
             <div class="testimonial-quote-internal">			
@@ -48,7 +46,7 @@ function baaz_testimonials_loop() {
             </div>
             <div class="client-contact-info-wrap">
             <span class="client-contact-info-internal">
-            <?php echo $data['person-name'] . ', ' . $data['location'] . '</span></div><hr>';
+            <?php echo $data['person-name'] . '</span></div><hr>';
         endwhile; 
     endif;
 

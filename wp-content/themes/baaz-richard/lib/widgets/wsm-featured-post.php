@@ -6,8 +6,11 @@
  *
  */
 
- add_action( 'widgets_init', create_function( '', "register_widget('WSM_Featured_Post');" ) );
-
+//  add_action( 'widgets_init', create_function( '', "register_widget('WSM_Featured_Post');" ) );
+ add_action( 'widgets_init', 'websm_featured_post' );
+ function websm_featured_post() {
+	 register_widget('WSM_Featured_Post');
+ }
 /**
  * Genesis Featured Post widget class.
  *

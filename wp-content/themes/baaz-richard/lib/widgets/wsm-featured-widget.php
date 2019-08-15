@@ -6,8 +6,11 @@
  */
 
 
-add_action( 'widgets_init', create_function( '', "register_widget('WSM_Featured_Widget');" ) );
-
+// add_action( 'widgets_init', create_function( '', "register_widget('WSM_Featured_Widget');" ) );
+add_action( 'widgets_init', 'wsm_featured_widget' );
+function wsm_featured_widget() {
+	register_widget('WSM_Featured_Widget');
+}
 
 class WSM_Featured_Widget extends WP_Widget {
 

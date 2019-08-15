@@ -6,8 +6,10 @@
  */
 
 
-add_action( 'widgets_init', create_function( '', "register_widget('WSM_Title_Widget');" ) );
-
+add_action( 'widgets_init', 'wsm_title_widget' );
+function wsm_title_widget() {
+	register_widget('WSM_Title_Widget');
+}
 
 class WSM_Title_Widget extends WP_Widget {
 
