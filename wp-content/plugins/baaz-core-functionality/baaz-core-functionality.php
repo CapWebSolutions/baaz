@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: BAAZ Core Functionality
- * Plugin URI: https://github.com/CapWebSolutions/corefunctionality
+ * Plugin URI: https://github.com/CapWebSolutions/baaz
  * Description: This contains all this site's core functionality so that it is theme independent. Customized for this site.
  * Version: 1.1.0
  * Author: Cap Web Solutions
